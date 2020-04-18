@@ -1,4 +1,4 @@
-# Friendly name
+# Friendly names
 > Simple and lightweight library that creates friendly names using nouns and adjectives. 
 
 ![Travis (.org)](https://img.shields.io/travis/bgalek/friendly-names.svg?style=flat-square) 
