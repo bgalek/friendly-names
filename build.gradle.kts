@@ -21,8 +21,8 @@ group = "com.github.bgalek.utils"
 version = scmVersion.version
 
 configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_1_9
-    targetCompatibility = JavaVersion.VERSION_1_9
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 tasks.jar {
@@ -49,7 +49,7 @@ tasks.register<Jar>("javadocJar") {
 }
 
 jacoco {
-    toolVersion = "0.8.5"
+    toolVersion = "0.8.6"
     reportsDir = file("$buildDir/reports/jacoco")
 }
 
