@@ -38,7 +38,7 @@ jobs:
         run: ./gradlew jacocoTestReport
      
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v3
         
       - name: Analyze with SonarCloud
         run: ./gradlew sonarqube -Dsonar.login=${SONAR_TOKEN} -Dsonar.projectKey=bgalek_friendly-names -Dsonar.organization=bgalek-github -Dsonar.host.url=https://sonarcloud.io
