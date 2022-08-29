@@ -12,7 +12,7 @@
 
 Add library dependency:
 ```groovy
-compile "com.github.bgalek.security.utils:friendlynames:1.0.0"
+compile "com.github.bgalek.utils:friendlynames:1.0.0"
 ```
 
 You can use this library generate user-friendly names:
