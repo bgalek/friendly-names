@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.6.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
 }
 
 group = "com.github.bgalek.utils"
