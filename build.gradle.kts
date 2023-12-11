@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
     signing
     jacoco
-    id("pl.allegro.tech.build.axion-release") version "1.16.0"
+    id("pl.allegro.tech.build.axion-release") version "1.16.1"
     id("com.adarshr.test-logger") version "3.2.0"
     id("org.sonarqube") version "4.4.1.3373"
 }
