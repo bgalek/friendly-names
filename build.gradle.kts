@@ -5,7 +5,7 @@ plugins {
     jacoco
     id("pl.allegro.tech.build.axion-release") version "1.18.0"
     id("com.adarshr.test-logger") version "3.2.0"
-    id("org.sonarqube") version "5.0.0.4638"
+    id("org.sonarqube") version "5.1.0.4882"
 }
 
 repositories {
