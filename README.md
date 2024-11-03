@@ -1,7 +1,7 @@
 # Friendly names
 > Simple and lightweight library that creates friendly names using nouns and adjectives. 
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bgalek/friendly-names/Build?style=flat-square)
+[![Build](https://github.com/bgalek/friendly-names/actions/workflows/build.yml/badge.svg)](https://github.com/bgalek/friendly-names/actions/workflows/build.yml)
 ![Codecov](https://img.shields.io/codecov/c/github/bgalek/friendly-names.svg?style=flat-square)
 ![GitHub Release Date](https://img.shields.io/github/release-date/bgalek/friendly-names.svg?style=flat-square)
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/bgalek/friendly-names.svg?style=flat-square)
