@@ -19,7 +19,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6
       - run: ./gradlew build
       - run: ./gradlew jacocoTestReport
-      - uses: codecov/codecov-action@v6
+      - uses: codecov/codecov-action@v7
   dependabot:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' && github.actor == 'dependabot[bot]' }}
