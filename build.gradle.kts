@@ -13,7 +13,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
+    testImplementation(platform("org.junit:junit-bom:6.1.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 group = "com.github.bgalek.utils"
@@ -24,21 +26,27 @@ java {
     withJavadocJar()
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(21))
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
     }
 }
 
-tasks.jar {
-    manifest {
-        attributes(mapOf("Implementation-Title" to project.name, "Implementation-Version" to project.version))
+tasks.named<JavaCompile>("compileJava") {
+    options.release.set(11)
+}
+
+tasks {
+    jar {
+        manifest {
+            attributes(mapOf("Implementation-Title" to project.name, "Implementation-Version" to project.version))
+        }
     }
 }
 
-tasks.test {
+tasks.withType<Test> {
     useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }
-
 
 tasks.jacocoTestReport {
     reports {
@@ -98,6 +106,8 @@ nexusPublishing {
         sonatype {
             username.set(System.getenv("SONATYPE_USERNAME"))
             password.set(System.getenv("SONATYPE_PASSWORD"))
+            nexusUrl.set(uri("https://ossrh-staging-api.central.sonatype.com/service/local/"))
+            snapshotRepositoryUrl.set(uri("https://central.sonatype.com/repository/maven-snapshots/"))
         }
     }
 }

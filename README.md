@@ -1,18 +1,16 @@
 # Friendly names
-> Simple and lightweight library that creates friendly names using nouns and adjectives. 
+> Simple and lightweight library that creates friendly names using nouns and adjectives.
 
 [![Build](https://github.com/bgalek/friendly-names/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/bgalek/friendly-names/actions/workflows/build.yml)
 ![Codecov](https://img.shields.io/codecov/c/github/bgalek/friendly-names.svg?style=flat-square)
 ![GitHub Release Date](https://img.shields.io/github/release-date/bgalek/friendly-names.svg?style=flat-square)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/bgalek/friendly-names.svg?style=flat-square)
-![Scrutinizer code quality](https://img.shields.io/scrutinizer/g/bgalek/friendly-names.svg?style=flat-square)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bgalek_friendly-names&metric=alert_status)](https://sonarcloud.io/dashboard?id=bgalek_friendlyname)
+![Maven Central](https://img.shields.io/maven-central/v/com.github.bgalek.utils/friendly-names?style=flat-square)
 
 ## Usage
 
 Add library dependency:
 ```groovy
-compile "com.github.bgalek.utils:friendlynames:1.0.0"
+implementation "com.github.bgalek.utils:friendly-names:1.0.0"
 ```
 
 You can use this library generate user-friendly names:
